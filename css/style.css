@@ -1075,3 +1075,28 @@
     background-color: #003A66; /* Hover color */
     color: white;
 }
+
+
+
+
+
+
+
+.custom-body {
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  .custom-tabs .nav-link.active {
+    background-color:#003a66;
+    color: #fff;
+  }
+  .custom-tab-content {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-top: none;
+  }
+  .custom-section-title {
+    font-weight: bold;
+    margin-top: 20px;
+  }
