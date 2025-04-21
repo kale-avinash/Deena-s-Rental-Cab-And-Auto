@@ -108,8 +108,7 @@
     color: var(--bs-primary) !important;
 }
 
-
-/*** Section Title Start ***/
+/* services section  */
 .section-title {
     max-width: 900px;
     text-align: center;
@@ -123,61 +122,50 @@
     color: var(--bs-primary);
 }
 
-.section-title .sub-style::before {
-    content: "";
-    width: 100px;
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    margin-bottom: -6px;
-    margin-left: -100px;
-    border: 1px solid var(--bs-secondary) !important;
-}
-
-.section-title .sub-style::after {
-    content: "";
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    margin-top: -8px;
-    margin-left: -50px;
-    border: 1px solid var(--bs-primary) !important;
+.section-title .sub-style::before,
+.section-title .sub-style::after,
+.sub-title::before,
+.sub-title::after {
+    display: none; /* Hide decorative lines on mobile for cleaner layout */
 }
 
 .sub-title {
-    position: relative;
-    display: inline-block;
     text-transform: uppercase;
     color: var(--bs-primary);
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-.sub-title::before {
-    content: "";
-    width: 100px;
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    margin-bottom: -8px;
-    margin-right: -100px;
-    border: 1px solid var(--bs-secondary) !important;
+.service-box {
+    text-align: center;
+    padding: 30px 20px;
+    height: 100%;
+    border: 1px solid #eee;
+    transition: 0.3s ease;
 }
 
-.sub-title::after {
-    content: "";
-    width: 50px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    margin-top: -6px;
-    margin-right: -50px;
-    border: 1px solid var(--bs-primary) !important;
+.service-box:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 576px) {
+    .service-box {
+        padding: 20px 15px;
+    }
+
+    .service-icon {
+        font-size: 2rem;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+}
 
 /*** Topbar Start ***/
 .fixed-top .container {
